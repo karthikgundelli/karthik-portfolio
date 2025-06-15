@@ -1,9 +1,14 @@
-import React, { useEffect } from 'react';
+import React, { useEffect , useNavigate} from 'react';
 import './Summary.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+
+
 const Summary = () => {
+
+ const navigate = useNavigate();
+ 
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -38,7 +43,9 @@ const Summary = () => {
           I’m actively looking for opportunities to grow as a software developer and contribute to impactful projects while continuing to learn and evolve in this exciting field.
         </p>
 
-        <a href="#contact" className="summary-button">Connect with Me</a>
+            <button onClick={() => navigate('/contact')}>
+      Contact Me
+    </button>
       </div>
     </section>
   );
