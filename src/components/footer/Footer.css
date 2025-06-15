@@ -1,0 +1,59 @@
+.footer {
+  background-color: #101820;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.footer h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  font-size: 1.8rem;
+  color: #fff;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.icon.whatsapp:hover {
+  color: #25d366;
+}
+
+.icon.email:hover {
+  color: #ff6b6b;
+}
+
+.icon.linkedin:hover {
+  color: #0077b5;
+}
+
+.footer p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .footer h3 {
+    font-size: 1.4rem;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+  }
+}
