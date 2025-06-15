@@ -1,5 +1,6 @@
 import React, { useEffect , useNavigate} from 'react';
 import './Summary.css';
+import '.components/contact/Contact'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
